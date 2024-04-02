@@ -1,6 +1,6 @@
 {
   "name": "eloverblik-consumption",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Unofficial SDK to compare electricity usage from ElOverblik with prices from various supplies.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
