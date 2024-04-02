@@ -155,14 +155,14 @@ describe('Price fetchers', () => {
     });
 
     test('Aura fetcher can get price for one date', async () => {
-        const fetchedPrices = await priceFetcher.getPrices('Aura', ['2024-03-04'], 'DK1');
+        const fetchedPrices = await priceFetcher.getPrices('Aura', [new Date()], 'DK1');
 
         expect(fetchedPrices.length).toBe(1);
         expect(fetchedPrices[0].prices.length).toBe(24);
     });
 
     test('Aura fetcher can get price for multiple dates', async () => {
-        const fetchedPrices = await priceFetcher.getPrices('Aura', ['2024-03-04', '2024-03-05'], 'DK1');
+        const fetchedPrices = await priceFetcher.getPrices('Aura', [new Date(), new Date(Date.now() - 24 * 60 * 60 * 1000)], 'DK1');
 
         expect(fetchedPrices.length).toBe(2);
     });
