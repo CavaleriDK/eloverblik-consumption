@@ -1,7 +1,7 @@
 {
-  "name": "eloverblik-electricity-prices",
-  "version": "1.0.0",
-  "description": "Unofficial SDK to compare elecricity usage from ElOverblik with prices from various supplies.",
+  "name": "eloverblik-consumption",
+  "version": "0.0.0",
+  "description": "Unofficial SDK to compare electricity usage from ElOverblik with prices from various supplies.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -22,23 +22,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CavaleriDK/typescript-module-template.git"
+    "url": "git+https://github.com/CavaleriDK/eloverblik-consumption.git"
   },
   "keywords": [
-    "template",
-    "boilerplate",
-    "typescript",
-    "module"
+    "eloverblik",
+    "energinet",
+    "electricity"
   ],
   "author": "Michael Cavaleri",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CavaleriDK/typescript-module-template/issues"
+    "url": "https://github.com/CavaleriDK/eloverblik-consumption/issues"
   },
-  "homepage": "https://github.com/CavaleriDK/typescript-module-template/#readme",
+  "homepage": "https://github.com/CavaleriDK/eloverblik-consumption/#readme",
   "devDependencies": {
-    "@babel/core": "^7.24.3",
-    "@babel/preset-env": "^7.24.3",
+    "@babel/core": "7.24.3",
+    "@babel/preset-env": "7.24.3",
     "@types/jest": "29.5.12",
     "@typescript-eslint/eslint-plugin": "7.0.2",
     "@typescript-eslint/parser": "7.0.2",
@@ -49,10 +48,10 @@
     "prettier": "3.2.5",
     "terser-webpack-plugin": "^5.3.10",
     "ts-jest": "29.1.2",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.3.3",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4"
+    "ts-loader": "9.5.1",
+    "typescript": "5.3.3",
+    "webpack": "5.91.0",
+    "webpack-cli": "5.1.4"
   },
   "files": [
     "dist/**/*",
